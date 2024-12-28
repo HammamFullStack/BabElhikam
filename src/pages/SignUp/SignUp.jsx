@@ -70,10 +70,12 @@ export const SignUp = () => {
           </form>
           <div className={styles.center}>
             <p>
-            Already have an account? <Link to={'/login'} className={styles.noUnderLine}><span>Login here</span></Link>
+              Already have an account?{" "}
+              <Link to={"/login"} className={styles.noUnderLine}>
+                <span>Login here</span>
+              </Link>
             </p>
           </div>
-          
         </div>
       </div>
     </>

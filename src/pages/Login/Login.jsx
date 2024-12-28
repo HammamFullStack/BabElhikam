@@ -43,9 +43,7 @@ export const Login = () => {
               className={styles.email}
               placeholder="Work email"
             />
-            <label htmlFor="">
-              Password
-            </label>
+            <label htmlFor="">Password</label>
             <input
               type="password"
               id="password"
@@ -54,7 +52,10 @@ export const Login = () => {
               placeholder="Password"
             />
             <div className={styles.forgotPassword}>
-              <Link className={styles.forgotPasswordLink} to={"/forgot-password"}>
+              <Link
+                className={styles.forgotPasswordLink}
+                to={"/forgot-password"}
+              >
                 <p className={styles.forgotPasswordText}>
                   <span>Forgot password?</span>
                 </p>

@@ -12,9 +12,7 @@ export const ForgotPassword = () => {
         </div>
         <div className={styles.ForgotPasswordForm}>
           <h2 className={styles.title}>Forgot password?</h2>
-          <p>
-            We'll send you an email with instructions
-          </p>
+          <p>We'll send you an email with instructions</p>
           <hr />
           <form action="" className={styles.form}>
             <label htmlFor="">Email</label>
@@ -28,7 +26,9 @@ export const ForgotPassword = () => {
             <button>Recover Password</button>
           </form>
           <hr />
-          <Link to={'/login'}><button className={styles.goBack}>Go Back</button></Link>
+          <Link to={"/login"}>
+            <button className={styles.goBack}>Go Back</button>
+          </Link>
         </div>
       </div>
     </>

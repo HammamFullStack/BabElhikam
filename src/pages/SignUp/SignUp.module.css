@@ -16,7 +16,7 @@
   margin-top: 3em;
 }
 
-.title{
+.title {
   margin-bottom: 0;
 }
 
@@ -79,22 +79,22 @@
   border-radius: 5px;
 }
 
-#passwordCheck{
-    color: rgb(128, 127, 127);
-    display: inline;
+#passwordCheck {
+  color: rgb(128, 127, 127);
+  display: inline;
 }
 
 .block {
   display: block;
 }
 
-.noUnderLine{
-    text-decoration: none;
+.noUnderLine {
+  text-decoration: none;
 }
 
-.noUnderLine:hover{
-    text-decoration: underline;
-    color: var(--secondary-accent);
+.noUnderLine:hover {
+  text-decoration: underline;
+  color: var(--secondary-accent);
 }
 
 .center {
