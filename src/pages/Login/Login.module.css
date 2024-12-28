@@ -42,7 +42,9 @@
   font-weight: bold;
 }
 
-.socialButtons button:hover {
+.socialButtons button:hover,
+.email:hover,
+.password:hover {
   background-color: rgb(225, 225, 225);
 }
 
@@ -54,6 +56,12 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
+}
+
+.email:focus,
+.password:focus {
+  background-color: rgb(225, 225, 225);
+  outline-color: var(--secondary-accent);
 }
 
 .form button {
@@ -69,27 +77,52 @@
 .form input,
 .form button,
 .socialButtons button {
-  padding: 0.6em;
+  padding: 0.7em;
   border: none;
   border-radius: 5px;
 }
 
-#passwordCheck{
-    color: rgb(128, 127, 127);
-    display: inline;
+.forgotPassword {
+  text-align: right;
 }
 
-.block {
-  display: block;
+.forgotPasswordLink,
+.createAccountLink {
+  text-decoration: none;
+  display: inline;
 }
 
-.noUnderLine{
-    text-decoration: none;
+.forgotPasswordLink:hover,
+.createAccountLink:hover {
+  text-decoration: underline;
+  color: var(--secondary-accent);
 }
 
-.noUnderLine:hover{
-    text-decoration: underline;
-    color: var(--secondary-accent);
+.forgotPasswordText {
+  display: inline;
+}
+
+#passwordCheck {
+  color: rgb(128, 127, 127);
+  display: inline;
+}
+
+.noUnderLine {
+  text-decoration: none;
+}
+
+.noUnderLine:hover {
+  text-decoration: underline;
+  color: var(--secondary-accent);
+}
+
+.noUnderLine {
+  text-decoration: none;
+}
+
+.noUnderLine:hover {
+  text-decoration: underline;
+  color: var(--secondary-accent);
 }
 
 .center {

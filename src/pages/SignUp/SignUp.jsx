@@ -4,13 +4,14 @@ import FacebookIcon from "../../assets/FacebookIcon.png";
 import TwitterIcon from "../../assets/TwitterIcon.png";
 import background from "../../assets/background.png";
 import styles from "./signUp.module.css";
+import { Link } from "react-router-dom";
 export const SignUp = () => {
   return (
     <>
       <div className={styles.logo}>BabElhikam</div>
       <div className={styles.container}>
         <div className={styles.background}>
-          <img src={background} alt="signUp background" />
+          <img src={background} alt="background" />
         </div>
         <div className={styles.signUpForm}>
           <h2>Create an account</h2>
@@ -67,9 +68,12 @@ export const SignUp = () => {
             />
             <button>Create an account</button>
           </form>
-          <p>
-            Already have an account? <span>Login here</span>
-          </p>
+          <div className={styles.center}>
+            <p>
+            Already have an account? <Link to={'/login'} className={styles.noUnderLine}><span>Login here</span></Link>
+            </p>
+          </div>
+          
         </div>
       </div>
     </>
