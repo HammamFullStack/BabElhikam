@@ -1,4 +1,4 @@
-import { SignUp } from "./pages/signUp"
+import { SignUp } from "./pages/SignUp/SignUp"
 
 
 function App() {
