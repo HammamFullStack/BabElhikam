@@ -14,7 +14,7 @@ export const SignUp = () => {
           <img src={background} alt="background" />
         </div>
         <div className={styles.signUpForm}>
-          <h2>Create an account</h2>
+          <h2 className={styles.title}>Create an account</h2>
           <p>
             Create a free account to save your favorite quotes, submit your own,
             and connect with a community of wisdom seekers. Start your journey

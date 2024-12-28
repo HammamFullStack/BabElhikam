@@ -16,9 +16,14 @@
   margin-top: 3em;
 }
 
-.signUpForm {
+.title{
+  margin-bottom: 0;
+}
+
+.loginForm {
   display: flex;
   flex-direction: column;
+  row-gap: 0.8em;
   width: 25%;
 
   hr {
@@ -99,11 +104,6 @@
 }
 
 .forgotPasswordText {
-  display: inline;
-}
-
-#passwordCheck {
-  color: rgb(128, 127, 127);
   display: inline;
 }
 

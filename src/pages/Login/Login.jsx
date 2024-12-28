@@ -13,12 +13,11 @@ export const Login = () => {
         <div className={styles.background}>
           <img src={background} alt="background" />
         </div>
-        <div className={styles.signUpForm}>
-          <h2>Log into my account</h2>
+        <div className={styles.loginForm}>
+          <h2 className={styles.title}>Log into my account</h2>
           <p>
-            Create a free account to save your favorite quotes, submit your own,
-            and connect with a community of wisdom seekers. Start your journey
-            today—it's quick and easy!
+            Welcome back! Log in to access your favorite quotes, submit new
+            ones, and continue your journey of inspiration and wisdom.
           </p>
           <div className={styles.socialButtons}>
             <button>
@@ -45,7 +44,7 @@ export const Login = () => {
               placeholder="Work email"
             />
             <label htmlFor="">
-              Password <p id={styles.passwordCheck}>(min. 8 char)</p>
+              Password
             </label>
             <input
               type="password"
@@ -55,13 +54,13 @@ export const Login = () => {
               placeholder="Password"
             />
             <div className={styles.forgotPassword}>
-              <Link className={styles.forgotPasswordLink}>
+              <Link className={styles.forgotPasswordLink} to={"/forgot-password"}>
                 <p className={styles.forgotPasswordText}>
                   <span>Forgot password?</span>
                 </p>
               </Link>
             </div>
-            <button>Create an account</button>
+            <button>Login</button>
           </form>
           <hr />
           <div className={styles.center}>
