@@ -18,6 +18,10 @@ function App() {
       path: "/forgot-password",
       element: <ForgotPassword />,
     },
+    {
+      path: "/sign-up",
+      element: <SignUp />,
+    }
   ]);
 
   return <RouterProvider router={router} />;

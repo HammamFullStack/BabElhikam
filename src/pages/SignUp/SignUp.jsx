@@ -3,12 +3,15 @@ import googleIcon from "../../assets/googleIcon.png";
 import FacebookIcon from "../../assets/FacebookIcon.png";
 import TwitterIcon from "../../assets/TwitterIcon.png";
 import background from "../../assets/background.png";
+import BabElhikamLogo from "../../assets/BabElhikamLogo.png";
 import styles from "./signUp.module.css";
 import { Link } from "react-router-dom";
 export const SignUp = () => {
   return (
     <>
-      <div className={styles.logo}>BabElhikam</div>
+      <div>
+        <Link to={'/'}><img className={styles.logo} src={BabElhikamLogo} alt="BabElhikam" /></Link>
+      </div>
       <div className={styles.container}>
         <div className={styles.background}>
           <img src={background} alt="background" />

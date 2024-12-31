@@ -1,11 +1,14 @@
 import React from "react";
 import background from "../../assets/background.png";
 import styles from "./ForgotPassword.module.css";
+import BabElhikamLogo from "../../assets/BabElhikamLogo.png";
 import { Link } from "react-router-dom";
 export const ForgotPassword = () => {
   return (
     <>
-      <div className={styles.logo}>BabElhikam</div>
+      <div>
+        <Link to={'/'}><img className={styles.logo} src={BabElhikamLogo} alt="BabElhikam" /></Link>
+      </div>
       <div className={styles.container}>
         <div className={styles.background}>
           <img src={background} alt="background" />

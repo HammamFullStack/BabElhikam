@@ -1,6 +1,7 @@
 .logo {
-  padding: 1em;
-  font-size: large;
+  padding-left: 3em;
+  padding-top: 1em;
+  width: 10em;
 }
 
 .background img {
@@ -93,7 +94,7 @@
 .form button,
 .socialButtons button {
   padding: 0.6em;
-  border: none;
+  border: 0.5px solid rgb(225, 225, 225);
   border-radius: 5px;
 }
 

@@ -5,6 +5,8 @@ import introImg from '../../assets/introImg.jpeg'
 import authorImg from '../../assets/authorImg.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faQuoteLeft, faPenNib, faUserGroup, faComment, faCloud } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { NavLink } from 'react-router-dom'
 import styles from './Home.module.css'
 
 export const Home = () => {
@@ -14,16 +16,16 @@ export const Home = () => {
             <div className={styles.navLeft}>
                 <img src={BabElhikamLogo} alt="BabElhikam" className={styles.logoImg}/>
                 <ul className={styles.navList}>
-                    <li>Home</li>
-                    <li>Quotes</li>
-                    <li>Authors</li>
-                    <li>Categories</li>
-                    <li>About</li>
+                    <NavLink to={'/'} className='navLink'>Home</NavLink>
+                    <NavLink to={'/quotes'} className='navLink'>Quotes</NavLink>
+                    <NavLink to={'/authors'} className='navLink'>Authors</NavLink>
+                    <NavLink to={'/'} className='navLink'>Categories</NavLink>
+                    <NavLink to={'/about'} className='navLink'>About</NavLink>
                 </ul>
             </div>
             <div className={styles.navRight}>
-                <button className={styles.loginBtn}>Login</button>
-                <button className={styles.signUpBtn}>Sign up</button>
+                <NavLink to={'/login'} className={`${styles.loginBtn} navLink`}>Login</NavLink>
+                <NavLink to={'/sign-up'} className={`${styles.signUpBtn} navLink`}>Sign up</NavLink>
             </div>
         </nav>
         <main>
@@ -41,7 +43,7 @@ export const Home = () => {
             </div>
             <div className={styles.introTextContainer}>
                 <h1 className={styles.introTitle}>A world of <span>wisdom</span>, inspiration, and timeless <span>quotes</span>. Explore our collection and find the words that move you</h1>
-                <button className={styles.introBtn}>Explore now</button>
+                <NavLink className={`${styles.introBtn} navLink`}>Explore now</NavLink>
             </div>
         </section>
         <section className={styles.numbers}>
@@ -81,6 +83,41 @@ export const Home = () => {
                 <FontAwesomeIcon icon={faCloud} className={styles.authorIconCloud}/>
             </div>
         </section>
+        <footer>
+            <div className={styles.footerContainer}>
+                <div className={styles.footerLogo}>
+                    <img src={BabElhikamLogo} alt="BabElhikam" className={styles.footerLogoImg}/>
+                </div>
+                <div className={styles.footerLinks}>
+                    <h3>Quick Links</h3>
+                </div>
+                <div className={styles.footerContact}>
+                    <h3>Contact</h3>
+                </div>
+                <div className={styles.footerLogoText}>
+                    <p>BabElhikam-Your gateway to timeless wisdom and inspiration.</p>
+                </div>
+                <div className={styles.footerLinksList}>
+                    <ul className={styles.navList}>
+                        <NavLink to={'/'} className='navLink'>Home</NavLink>
+                        <NavLink to={'/quotes'} className='navLink'>Quotes</NavLink>
+                        <NavLink to={'/authors'} className='navLink'>Authors</NavLink>
+                        <NavLink to={'/'} className='navLink'>Categories</NavLink>
+                        <NavLink to={'/about'} className='navLink'>About</NavLink>
+                    </ul>
+                </div>
+                <div className={styles.footerContactList}>
+                    <ul className={styles.List}>
+                        <li><FontAwesomeIcon icon={faFacebook} /></li>
+                        <li><FontAwesomeIcon icon={faInstagram} /></li>
+                        <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                    </ul>
+                </div>
+                <div className={styles.footerCopyRight}>
+                    <p><b>&copy; 2024 BabElhikam. All rights reserved.</b></p>
+                </div>
+            </div>
+        </footer>
         </main>
     </>
   )
