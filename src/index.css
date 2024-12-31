@@ -1,13 +1,19 @@
 :root{
-  --background: #F5F5F5;
-  --primary-accent: #2C3E50;
-  --secondary-accent: #E67E22;
+  --background: #ffffff;
+  --primary-accent: #8EC63F;
+  --secondary-accent: #F5F5F5;
   --text: #2C2C2C;
   --button-hover: #D35400;
 }
 
+/*#E0E0E0*/
 body {
+  margin: 0;
   background-color: var(--background);
   color: var(--text);
+  font-family: 'Roboto Slab', serif;
+}
+
+button{
   font-family: 'Roboto Slab', serif;
 }

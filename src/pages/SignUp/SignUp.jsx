@@ -36,35 +36,35 @@ export const SignUp = () => {
           </div>
           <hr />
           <form action="" className={styles.form}>
-            <label htmlFor="email" className={styles.block}>
+            <label htmlFor="" >
               Email
             </label>
             <input
               type="email"
               id="email"
               name="email"
+              className={styles.email}
               placeholder="Work email"
-              className={styles.block}
             />
-            <label htmlFor="password" className={styles.block}>
+            <label htmlFor="" >
               Password <p id={styles.passwordCheck}>(min. 8 char)</p>
             </label>
             <input
               type="password"
               id="password"
               name="password"
+              className={styles.password}
               placeholder="Password"
-              className={styles.block}
             />
-            <label htmlFor="confirmPassword" className={styles.block}>
+            <label htmlFor="" >
               Confirm Password
             </label>
             <input
               type="password"
               id="confirmPassword"
               name="confirmPassword"
+              className={styles.confirmPassword}
               placeholder="Confirm Password"
-              className={styles.block}
             />
             <button>Create an account</button>
           </form>

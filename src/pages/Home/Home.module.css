@@ -1,0 +1,211 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--secondary-accent);
+    position: fixed;
+    width: 100%;
+    height: 3vh;
+    z-index: 100;
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    width: 100%;
+    height: 4em;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    column-gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.navRight{
+    display: flex;
+    column-gap: 1em;
+    margin-right: 1em;
+    align-items: center;
+}
+
+.signUpBtn{
+    background-color: var(--primary-accent);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.loginBtn{
+    border: none;
+    background-color: var(--secondary-accent);
+    font-weight: bold;
+}
+
+main{
+    padding-top: 6.5vh;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-accent);
+    height:90vh;
+    position: relative;
+}
+
+.heroTitle{
+    margin-top: 5em;
+    color: white;
+    font-size: 2.5em;
+}
+
+.inputGroup{
+    position: relative;
+    width: 50%;
+}
+
+.heroSearch{
+    width: calc(100% - 4em);
+    border-radius: 30px;
+    padding: 1.5em 2em;
+    border: 1px solid var(--secondary-accent);
+}
+
+.heroBtn{
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: var(--text);
+    background-color: transparent;
+    border: none;
+}
+
+.homeBackgroundImg{
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    bottom: 0;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4em;
+    padding: 4em 10em;
+}
+
+.introImgContainer{
+    width: 40%;
+}
+
+.introImg{
+    width: 100%;
+}
+
+.introTextContainer{
+    width: 35%;
+    padding: 0 2em;
+}
+
+.introBtn{
+    background-color: var(--primary-accent);
+    border: none;
+    padding: 1em 2em;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    transition: all 0.2s linear 0s;
+    position: relative;
+}
+
+.introBtn:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;  
+    top: 30%;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.introBtn:hover{
+    padding-right: 2.5em;
+  padding-left: 1.5em;
+}
+  
+.introBtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-accent);
+    height: 15vh;
+}
+
+.numbersContainer{
+    display: flex;
+    column-gap: 8em;
+}
+
+.numberCard{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.numberIcon{
+    font-size: 3em;
+}
+
+.quoteOfTheDay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15em;
+    background-color: var(--secondary-accent);
+    width: 100%;
+    height: 30vh;
+}
+
+.authorImgContainer{
+    display: flex;
+    position: relative;
+    width: 25vh;
+}
+
+.authorImg{
+    width: 100%;
+    border: 1px solid var(--primary-accent);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.authorIconComment, .authorIconCloud{
+    position: absolute;
+    color: var(--primary-accent);
+    border: none;
+    font-size: 4em;
+}
+
+.authorIconComment{
+    bottom: 0;
+    right: 0; 
+}
+

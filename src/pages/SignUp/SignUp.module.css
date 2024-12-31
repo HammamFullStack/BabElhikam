@@ -47,8 +47,26 @@
   font-weight: bold;
 }
 
-.socialButtons button:hover {
+.email,
+.password,
+.confirmPassword,
+.socialButtons button,
+.form button {
+  transition: 0.3s;
+}
+
+.socialButtons button:hover,
+.email:hover,
+.password:hover,
+.confirmPassword:hover {
   background-color: rgb(225, 225, 225);
+}
+
+.email:focus,
+.password:focus,
+.confirmPassword:focus {
+  background-color: rgb(225, 225, 225);
+  outline-color: var(--primary-accent);
 }
 
 .socialButtons button img {
@@ -62,7 +80,7 @@
 }
 
 .form button {
-  background-color: var(--secondary-accent);
+  background-color: var(--primary-accent);
   color: white;
   font-weight: bold;
 }
@@ -94,7 +112,7 @@
 
 .noUnderLine:hover {
   text-decoration: underline;
-  color: var(--secondary-accent);
+  color: var(--primary-accent);
 }
 
 .center {
@@ -102,7 +120,7 @@
 }
 
 span {
-  color: var(--secondary-accent);
+  color: var(--primary-accent);
 }
 
 button {
