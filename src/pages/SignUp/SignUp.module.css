@@ -1,0 +1,133 @@
+.logo {
+  padding-left: 3em;
+  padding-top: 1em;
+  width: 10em;
+}
+
+.background img {
+  object-fit: cover;
+}
+
+.container {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12em;
+  margin-top: 3em;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8em;
+  width: 25%;
+
+  hr {
+    width: 100%;
+  }
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+.socialButtons button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5em;
+  background-color: white;
+  font-weight: bold;
+}
+
+.email,
+.password,
+.confirmPassword,
+.socialButtons button,
+.form button {
+  transition: 0.3s;
+}
+
+.socialButtons button:hover,
+.email:hover,
+.password:hover,
+.confirmPassword:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.email:focus,
+.password:focus,
+.confirmPassword:focus {
+  background-color: rgb(225, 225, 225);
+  outline-color: var(--primary-accent);
+}
+
+.socialButtons button img {
+  width: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.form button {
+  background-color: var(--primary-accent);
+  color: white;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background-color: var(--button-hover);
+}
+
+.form input,
+.form button,
+.socialButtons button {
+  padding: 0.6em;
+  border: 0.5px solid rgb(225, 225, 225);
+  border-radius: 5px;
+}
+
+#passwordCheck {
+  color: rgb(128, 127, 127);
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.noUnderLine {
+  text-decoration: none;
+}
+
+.noUnderLine:hover {
+  text-decoration: underline;
+  color: var(--primary-accent);
+}
+
+.center {
+  text-align: center;
+}
+
+span {
+  color: var(--primary-accent);
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.8em;
+}
