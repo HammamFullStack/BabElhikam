@@ -1,33 +1,15 @@
 import React from 'react'
-import BabElhikamLogo from '../../assets/BabElhikamLogo.png'
 import homeBackground from '../../assets/homeBackground.jpeg'
 import introImg from '../../assets/introImg.jpeg'
 import authorImg from '../../assets/authorImg.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faQuoteLeft, faPenNib, faUserGroup, faComment, faCloud } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { NavLink } from 'react-router-dom'
 import styles from './Home.module.css'
 
 export const Home = () => {
   return (
     <>
-        <nav>
-            <div className={styles.navLeft}>
-                <img src={BabElhikamLogo} alt="BabElhikam" className={styles.logoImg}/>
-                <ul className={styles.navList}>
-                    <NavLink to={'/'} className='navLink'>Home</NavLink>
-                    <NavLink to={'/quotes'} className='navLink'>Quotes</NavLink>
-                    <NavLink to={'/authors'} className='navLink'>Authors</NavLink>
-                    <NavLink to={'/'} className='navLink'>Categories</NavLink>
-                    <NavLink to={'/about'} className='navLink'>About</NavLink>
-                </ul>
-            </div>
-            <div className={styles.navRight}>
-                <NavLink to={'/login'} className={`${styles.loginBtn} navLink`}>Login</NavLink>
-                <NavLink to={'/sign-up'} className={`${styles.signUpBtn} navLink`}>Sign up</NavLink>
-            </div>
-        </nav>
         <main>
         <section className={styles.hero}>
             <h1 className={styles.heroTitle}>Find Inspiration in Every Word</h1>
@@ -83,41 +65,6 @@ export const Home = () => {
                 <FontAwesomeIcon icon={faCloud} className={styles.authorIconCloud}/>
             </div>
         </section>
-        <footer>
-            <div className={styles.footerContainer}>
-                <div className={styles.footerLogo}>
-                    <img src={BabElhikamLogo} alt="BabElhikam" className={styles.footerLogoImg}/>
-                </div>
-                <div className={styles.footerLinks}>
-                    <h3>Quick Links</h3>
-                </div>
-                <div className={styles.footerContact}>
-                    <h3>Contact</h3>
-                </div>
-                <div className={styles.footerLogoText}>
-                    <p>BabElhikam-Your gateway to timeless wisdom and inspiration.</p>
-                </div>
-                <div className={styles.footerLinksList}>
-                    <ul className={styles.navList}>
-                        <NavLink to={'/'} className='navLink'>Home</NavLink>
-                        <NavLink to={'/quotes'} className='navLink'>Quotes</NavLink>
-                        <NavLink to={'/authors'} className='navLink'>Authors</NavLink>
-                        <NavLink to={'/'} className='navLink'>Categories</NavLink>
-                        <NavLink to={'/about'} className='navLink'>About</NavLink>
-                    </ul>
-                </div>
-                <div className={styles.footerContactList}>
-                    <ul className={styles.List}>
-                        <li><FontAwesomeIcon icon={faFacebook} /></li>
-                        <li><FontAwesomeIcon icon={faInstagram} /></li>
-                        <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                    </ul>
-                </div>
-                <div className={styles.footerCopyRight}>
-                    <p><b>&copy; 2024 BabElhikam. All rights reserved.</b></p>
-                </div>
-            </div>
-        </footer>
         </main>
     </>
   )
