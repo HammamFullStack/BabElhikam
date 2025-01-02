@@ -1,0 +1,71 @@
+.card{
+    display: flex;
+    justify-content: center;
+    width: 31%;
+    height: fit-content;
+    border: 1px solid var(--secondary-accent);
+    border-radius: 8px;
+    position: relative;
+}
+
+.authorImg{
+    width: 6vw;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: -3.5vw;
+}
+
+.container{
+    display: flex;
+    padding: 4em 1em 0 1em;
+    padding-top: 4em;
+    flex-direction: column;
+}
+
+.authorName{
+    align-self: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.badgeContainer{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5em;
+}
+
+.badge{
+    background-color: var(--secondary-accent);
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+}
+
+.quoteContainer{
+    background-color: var(--quoteBackground);
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 1em;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+}
+
+.loveBtn{
+    background-color: var(--background);
+    border: none;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+.loveNumbers{
+    color: var(--text);
+}
