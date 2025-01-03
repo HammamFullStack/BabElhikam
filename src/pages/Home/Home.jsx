@@ -56,7 +56,7 @@ export const Home = () => {
         <section className={styles.quoteOfTheDay}>
             <div className={styles.quoteTextContainer}>
                 <h1>Quote of the day</h1>
-                <blockquote><q className={styles.quoteText}>The best way to predict the furure is to create it.</q></blockquote>
+                <blockquote><q className={styles.quoteText}>The best way to predict the future is to create it.</q></blockquote>
                 <i>-Peter Drucker</i>
             </div>
             <div className={styles.authorImgContainer}>

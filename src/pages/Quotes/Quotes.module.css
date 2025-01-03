@@ -51,25 +51,25 @@ aside{
 }
 
 .inputGroup{
-    position: relative;
+    display: flex;
+    align-content: flex-end;
+    column-gap: 1em;
     width: 100%;
 }
 
 .heroSearch{
-    width: calc(100% - 2em);
+    width: 100%;
     border-radius: 15px;
     padding: 0.5em 1em;
     border: 1px solid var(--secondary-accent);
 }
 
 .heroBtn{
-    position: absolute;
-    top: 50%;
-    right: 0.5em;
-    transform: translateY(-50%);
     font-size: 1em;
-    color: var(--text);
-    background-color: transparent;
+    color: var(--background);
+    background-color: var(--primary-accent);
+    border-radius: 15px;
+    padding: 0.3em 0.6em;
     border: none;
 }
 

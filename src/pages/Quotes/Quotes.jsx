@@ -35,7 +35,7 @@ export const Quotes = () => {
                     <p>Search</p>
                     <form className={styles.inputGroup}>
                         <input className={styles.heroSearch} type="text" placeholder="Search for quotes, authors, or topics..." />
-                        <button className={styles.heroBtn} type='submit'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+                        <button className={styles.heroBtn} type='submit'>Search</button>
                     </form>
                 </div>
                 <div className={styles.categories}>
