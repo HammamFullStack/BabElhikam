@@ -56,18 +56,14 @@ export const Quotes = () => {
                 
             </aside>
             <section className={styles.quotes}>
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
-                <QuoteCard />
+                <QuoteCard  quote="The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle."/>
+                <QuoteCard  quote="Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. Remember, the journey of a thousand miles begins with a single step. It’s not about how fast you go but how steady you are in pursuing your goals and dreams to create a better future."/>
+                <QuoteCard  quote="The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle."/>
+                <QuoteCard  quote='A successful book is not made of what is in it, but what is left out of it.'/>
+                <QuoteCard  quote="The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle."/>
+                <QuoteCard  quote='A successful book is not made of what is in it, but what is left out of it.'/>
+                <QuoteCard  quote="The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle."/>
+                <QuoteCard  quote='A successful book is not made of what is in it, but what is left out of it.'/>
             </section>
         </div>
         

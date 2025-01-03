@@ -4,7 +4,7 @@ import styles from './QuoteCard.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-export const QuoteCard = () => {
+export const QuoteCard = ({quote}) => {
   return (
     <div className={styles.card}>
         <img src={authorImg2} alt="" className={styles.authorImg} />
@@ -15,7 +15,7 @@ export const QuoteCard = () => {
                 <p className={styles.badge}>Life</p>
             </div>
             <div className={styles.quoteContainer}>
-                <q className={styles.quote}>A successful book is not made of what is in it, but what is left out of it.</q>
+                <q className={styles.quote}>{quote}</q>
             </div>
             <div className={styles.actions}>
                 <button className={styles.loveBtn}>

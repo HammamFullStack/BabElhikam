@@ -45,3 +45,18 @@ button{
       margin-right: 1em;
   }
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-accent);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-accent);
+  border-radius: 15px;
+}

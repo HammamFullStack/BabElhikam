@@ -5,6 +5,7 @@
     height: fit-content;
     border: 1px solid var(--secondary-accent);
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -14,6 +15,8 @@
     border-radius: 50%;
     position: absolute;
     top: -3.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .container{
@@ -45,6 +48,8 @@
     background-color: var(--quoteBackground);
     border-radius: 8px;
     padding: 1em;
+    height: 8em;
+    overflow: auto;
 }
 
 .quote{
