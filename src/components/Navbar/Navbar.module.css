@@ -32,7 +32,7 @@ nav{
     background-color: var(--primary-accent);
     border: none;
     padding: 0.5em 1em;
-    border-radius: 20px;
+    border-radius: 15px;
     color: white;
     font-weight: bold;
 }
